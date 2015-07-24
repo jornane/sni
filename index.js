@@ -17,8 +17,8 @@ function sni(buf) {
 	end = 49 + skip + buf[skip+47] << 8 | buf[skip+48]; // Extensions Length
 	while(buf[skip+49] =! 0 && buf[skip+50] != 0) { // Skip past extension != Server Name
 		skip += buf[skip+51] >> 8 | buf[skip+52];
-		skip += 3;
-		if (skip + 3 > end) return null;
+		skip += 4;
+		if (skip + 4 > end) return null;
 	}
 	while(buf[skip+55] != 0) { // Skip past Server Name Type != host_name
 		skip += buf[skip+56] >> 8 | buf[skip+57];
