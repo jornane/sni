@@ -1,9 +1,14 @@
 {
   "name": "sni",
   "description": "Get the Server Name Indication of a raw TLS stream",
-  "version": "0.0.1",
-  "author": "Jan Buschtöns <buschtoens@gmail.com>",
+  "version": "0.0.2",
+  "author": "Jørn Åne de Jong <git@jornane.no>",
   "contributors": [
+    {
+      "name": "Jørn Åne de Jong",
+      "email": "git@jornane.no",
+      "url": "https://github.com/jornane"
+    },
     {
       "name": "Jan Buschtöns",
       "email": "buschtoens@gmail.com",
@@ -19,7 +24,7 @@
     "ssl",
     "crypto"
   ],
-  "repository": "git://github.com/silvinci/sni",
+  "repository": "git://github.com/jornane/sni",
   "main": "index",
   "engines": {
     "node": "*"
